@@ -1,0 +1,33 @@
+ @keyframes loading {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+div.loading-container {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+div.loading {
+    height: 70px;
+    width: 70px; 
+     border-radius: 50%;
+
+    border: 15px solid #0094f6;
+    border-top: 15px solid transparent;
+
+    animation: loading 1.5s linear infinite; 
+
+} 
+
+ 
+

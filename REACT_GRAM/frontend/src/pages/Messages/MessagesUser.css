@@ -1,0 +1,252 @@
+div.messages-container{
+    
+}
+
+div.messages-container header  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding-left: 20px;
+    border-bottom: 1px solid #363636;
+ }
+
+div.messages-container header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+div.messages-container header span.user-data {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+div.messages-container header span.message-icons svg{
+    font-size: 2em;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+
+div.containerMessages {
+    height: 75vh ;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+section.info-user {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+    text-align: center;
+    /* width: 60%; */
+    margin-top: 10px;
+
+}
+
+section.info-user img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+section.info-user a {
+    width: 100px;
+    margin: 0 auto;
+}
+
+
+ section.messages-users {
+    height: 45vh;
+    max-height: 100%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 30px;
+}
+
+section.messages-users span > p.timestamp {
+    font-size: 12px;
+    color: rgb(192, 192, 192);
+}
+
+span.receivedMessage,
+span.sentMessage {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    max-width: 300px;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+span.receivedMessage {
+    align-self: flex-start; /* Movido para a mensagem recebida para a direita */
+    background-color: #1A1C1D;
+}
+
+span.sentMessage {
+    align-self: flex-end; /* Mantido para a mensagem enviada à esquerda */
+    background-color: #0f5fa8;
+    
+}
+
+span.receivedMessage img,
+span.sentMessage img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+span.receivedMessage p,
+span.sentMessage p {
+    font-size: 16px;
+    margin: 0;
+    overflow-wrap: break-word;
+    max-width: 100%;
+} 
+
+ p.timestamp {
+    align-self: flex-end;
+}  
+
+  .delete {
+    display: none; 
+    cursor: pointer;
+  }
+
+  span.receivedMessage:hover .delete,
+  span.sentMessage:hover .delete {
+    display: inline-block;
+  }
+  
+
+form.form-message {
+    position: fixed;
+    top: 90%;
+    left: 10%;
+    width: 80%;
+
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    background-color: transparent;
+    border: 1px solid #363636;
+    border-radius: 40px;
+    padding: 0px 10px 0px 10px;
+}
+
+form.form-message > input {
+    background-color: transparent;
+    outline: none;
+    border: 0;
+    width: 70%;
+    font-size: 1.3em;
+    margin-top: 10px;
+}
+
+form.form-message svg {
+    font-size: 1.5em;
+}
+
+@media (min-width: 800px) and (max-width: 1200px){
+
+
+section.info-user {
+     width: 80%;
+}
+
+span.receivedMessage,
+span.sentMessage {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    max-width: 600px;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+section.messages-users {
+    height: 45vh;
+    width: 80%;
+    margin: 0 auto;
+}
+    
+form.form-message {
+    position: fixed;
+    top: 90%;
+    left: 10%;
+    width: 80%;
+}
+
+form.form-message > input {
+    background-color: transparent;
+    outline: none;
+    border: 0;
+    width: 70%;
+    font-size: 1.3em;
+    margin-top: 10px;
+}
+
+form.form-message svg {
+    font-size: 1.5em;
+    
+}
+
+
+}
+
+@media (min-width: 1201px){
+
+    section.info-user {
+        width: 60%;
+   }
+
+span.receivedMessage,
+span.sentMessage {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    max-width: 700px;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+    section.messages-users {
+        height: 45vh;
+        width: 60%;
+        margin: 0 auto;
+    }
+        
+    form.form-message {
+        position: fixed;
+        top: 90%;
+        left: 19%;
+        width: 60%;
+    }
+    
+    form.form-message > input {
+        background-color: transparent;
+        outline: none;
+        border: 0;
+        width: 70%;
+        font-size: 1.3em;
+        margin-top: 10px;
+    }
+    
+    form.form-message svg {
+        font-size: 1.5em;
+        
+    }
+    
+    }

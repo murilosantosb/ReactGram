@@ -1,0 +1,165 @@
+#profile {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1em;
+    border-bottom: 1px solid #363636;
+}
+
+.profile-header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 2em;
+}
+
+.new-photo {
+    padding: 1em;
+    border-bottom: 1px solid #363636;
+}
+
+.photos-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.photo {
+    width: 32%;
+    margin: 0.3%;
+}
+
+.photo img {
+    width: 100%;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.actions svg {
+    cursor: pointer;
+}
+
+.edit-photo {
+    margin-bottom: 1em;
+}
+
+.edit-photo img {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+div.info-user{
+    width: 100%;
+    display: flex;
+    gap: 15px;
+}
+
+.no-user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    margin: auto;
+}
+
+.profile-description span {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+}
+
+
+@media (min-width: 300px) and (max-width: 800px){
+    #profile {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .profile-header {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 1em;
+        border-bottom: 1px solid #363636;
+    }
+    
+    .profile-header img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        margin-right: 2em;
+    }
+    
+    .new-photo {
+        padding: 1em;
+        border-bottom: 1px solid #363636;
+    }
+    
+    .photos-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .photo {
+        width: 80%;
+        margin: 0.3%;
+        margin-top: 15px;
+    }
+
+    .profile-description span {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px;
+    }
+    
+}
+
+@media (min-width: 801px) and (max-width: 992px){
+    #profile {
+        width: 60%;
+        margin: 0 auto;
+    }
+    
+    .profile-header {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 1em;
+        border-bottom: 1px solid #363636;
+    }
+    
+    .profile-header img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        margin-right: 2em;
+    }
+    
+    .new-photo {
+        padding: 1em;
+        border-bottom: 1px solid #363636;
+    }
+    
+    .photos-container {
+        display: flex;
+        flex-wrap: wrap;
+        /* justify-content: center; */
+    }
+    
+    .photo {
+        width: 32%;
+        margin: 0.3%;
+    }
+
+}
