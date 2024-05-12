@@ -42,7 +42,7 @@ const Home = () => {
 
   return (
     <div id="home">
-      {photos && photos.map((photo) => (
+      {Array.isArray(photos) && photos.map((photo) => (
         <div key={photo._id}>
           <PhotoItem photo={photo}/>
           <LikeContainer photo={photo} user={user} handleLike={handleLike}/>
